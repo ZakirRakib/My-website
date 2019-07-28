@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+
+}
+.navbar{
+  background-color: #0009;
+  display: flex;
+  justify-content: center;
+}
+.navbar a{
+  color: #b0aeae;
+  text-align: center;
+  
+  text-decoration: none;
+  padding: 14px 28px;
+}
+.navbar a:hover{
+  background-color: #c4c4c4;
+  color: #0009;
+  transition: 0.8s all;
+}
+#toggle{
+  display: none;
+}
+.togglearea{
+  background-color: #0009;
+  border-bottom: 2px solid #6b6969;
+  color: #6b6969;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.togglearea label{
+  background-color: #6b6969;
+  height: 40px;
+  width: 40px;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.togglearea label span{
+   background-color: black;
+   height: 4px;
+   width: 80%;
+   margin: 2px 0px;
+}
+.togglearea{
+  display: none;
+}
+@media screen and (max-width: 700px){
+  .navbar{
+    flex-direction: column;
+    display: none;
+  }
+  #toggle:checked + .navbar {
+    display: flex;
+  }
+  .togglearea{
+  display: flex;
+  }
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+  border-radius: 10%;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  color: #bfbebb;
+}
+.box h2{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  color: #bfbebb;
+}
+.box p{
+  text-align: justify;
+  color: #bfbebb;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: #bfbebb;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #0009;
+}
+
+.about{
+  overflow: hidden;
+  text-align: center;
+  padding: 60px;
+}
+.about h3{
+  
+  margin-bottom: 60px;
+  color:#bfbebb;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-family: 'Century Gothic',sans-serif;
+}
+.border{
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: #bfbebb;
+  margin-bottom: 40px;
+}
+.ps{
+  margin-bottom: 40px;
+}
+.ps a{
+  display: inline-block;
+  margin: 0px 30px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #bfbebb;
+
+}
+.ps a img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+
+}
+.ps a:hover > img{
+  filter: none;
+}
+.section{
+  width: 900px;
+  margin: auto;
+  font-size: 20px;
+  color: #bfbebb;
+  font-family: 'Century Gothic',sans-serif;
+  text-align: justify;
+}
+.table-main{
+  text-align: center;
+
+}
+.table-main h1{
+   margin-bottom: 40px;
+  color:#bfbebb;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-family: 'Century Gothic',sans-serif;
+}
+.table-main table {
+  font-family: 'Century Gothic',sans-serif;
+  border-collapse: collapse;
+  width: 900px;
+  margin: 30px 500px 50px 500px;
+}
+
+.table-main td, th {
+  border: 1px solid #bfbebb;
+  text-align: center;
+  padding: 8px;
+  color: #bfbebb;
+}
+
+.table-main tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.carousel-header{
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+
+}
+.carousel-header h4{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-family: 'Century Gothic',sans-serif;
+  color: #bfbebb;
+}
+.carousel-main{
+  margin:0px 250px 0px 250px;
+}
+span.carousel-control-next-icon {
+    margin-right: 250px;
+}
+span.carousel-control-prev-icon{
+    margin-left: 250px;
+}
+.contact-section{
+   padding: 40px 0;
+}
+.contact-section h5{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-family: 'Century Gothic',sans-serif;
+  color: #bfbebb;
+}
+.border{
+  width: 100px;
+  height: 5px;
+  background: #bfbebb;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 700px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #0009;
+  padding: 20px 40px;
+  outline: none;
+  color: #bfbebb;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #bfbebb;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #0009;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #bfbebb;
+  color: #0009;
+}
+
+}
